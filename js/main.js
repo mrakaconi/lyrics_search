@@ -18,8 +18,7 @@ function ucitajPodatke() {
             tekstPesme.innerText = objekat.lyrics ? objekat.lyrics : "Nema pesme"
         });
 
-    const izvodjacWiki = document.getElementById("trazeni-izvodjac").value;
-    const url1 = `https://en.wikipedia.org/w/api.php?action=query&titles=${izvodjacWiki}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&redirects=&format=json&origin=*`
+    const url1 = `https://en.wikipedia.org/w/api.php?action=query&titles=${izvodjac}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&redirects=&format=json&origin=*`
 
     fetch(url1)
         .then(response => response.json())
@@ -35,7 +34,6 @@ function ucitajPodatke() {
 forma.addEventListener('submit', function (e) {
     e.preventDefault();
     readmore.classList.toggle("show")
-    console.log(trazeniIzvodjac.value);
     readmorehref.setAttribute('href', `https://en.wikipedia.org/wiki/${trazeniIzvodjac.value}`);
     ucitajPodatke();
 });

@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: #fff;
+    background-image: url(../img/pozadina.jpeg);
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -500;
+}
+
+h1, h2 {
+    color: #ccc;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+}
+
+#dugme {
+    margin-top: 20px;
+}
+.o-izvodjacu {
+    border: 1px solid yellow;
+    height: 500px;
+    width: 550px;
+    float: left;
+    margin-top: 50px;
+}
+div.col-md-6 {
+    text-align: center;
+}
+#readmore {
+    display: none;
+}
+#readmore.show {
+    display: block;
+}
+@media (min-width: 600px) {
+    background-size: 120%;
+}

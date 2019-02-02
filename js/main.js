@@ -21,11 +21,14 @@ function ucitajPodatke() {
     const url1 = `https://en.wikipedia.org/w/api.php?action=query&titles=${izvodjac}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&redirects=&format=json&origin=*`
 
     fetch(url1)
-        .then(response => response.json())
+        .then(response => response.json())    
         .then(podatak => {
             const pages = podatak.query.pages;
             const clanak = Object.values(pages)[0];
+            const imgSrc = clanak.thumbnail.source;
+            document.getElementById('slika').innerHTML = `<img src="${imgSrc}" alt="${clanak.title}">`
             document.getElementById('o-izvodjacu').innerHTML = clanak.extract.substr(0, 1000);
+            console.log(podatak);
         })
 
 }

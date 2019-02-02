@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: #fff;
-    background-image: url(../img/pozadina.jpeg);
+    background-image: url(../img/WorshipBackground.jpg);
     background-repeat: no-repeat;
     background-position-y: -50px;
     background-size: cover;
@@ -39,6 +39,9 @@ div.col-md-6 {
 }
 #readmore.show {
     display: block;
+}
+#slika {
+    margin-top: 15px;
 }
 @media (min-width: 600px) {
     background-size: 120%;

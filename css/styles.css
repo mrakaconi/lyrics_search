@@ -22,10 +22,10 @@ input {
 }
 
 #dugme {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .o-izvodjacu {
-    border: 1px solid red;
+    border: 1px solid black;
     height: 500px;
     width: 550px;
     float: left;

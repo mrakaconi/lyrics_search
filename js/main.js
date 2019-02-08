@@ -29,7 +29,7 @@ function ucitajPodatke() {
             document.getElementById('slika').innerHTML = `<img src="${imgSrc}" alt="${clanak.title}">`
             document.getElementById('o-izvodjacu').innerHTML = clanak.extract.substr(0, 1000);
             console.log(podatak);
-        })
+        });
 
 }
 
